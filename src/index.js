@@ -2,9 +2,8 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.min.js'
 import ReactDOM from 'react-dom/client';
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 import './index.css';
-import App from './App';
 import "./pages/style.css";
 import Header from "./pages/header";
 import Home from "./pages/home";
@@ -31,13 +30,13 @@ root.render(
       <Skill/>
       <Project/>
       
-    <Routes>
-    <Route path="/">
+    {/* <Routes>
+    <Route> */}
     {/* <Route index path="/" element={<Home />} />
     <Route index path="/about" element={<About />} /> */}
    
-      </Route>
-    </Routes>
+      {/* </Route>
+    </Routes> */}
     < Footer/>
 
     </Router>

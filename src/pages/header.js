@@ -1,27 +1,9 @@
-import { memo, useEffect, useState, useRef } from "react";
-import { BrowserRouter as Router, Link } from "react-router-dom";
+import { memo,  useRef } from "react";
+import {  Link } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoMdCloseCircleOutline } from "react-icons/io";
 function Header() {
-    const manuref = useRef()
-    // const {scrollPosition, setscrollPosition} = useState('');
-
-
-    // useEffect(() =>{
-
-    //     const handleScroll = () =>{
-    //         setscrollPosition(window.scrollY)
-    //     }
-    // console.log("hang", handleScroll)
-    //     window.addEventListener('scroll', handleScroll);
-    //     return () =>{
-    //         window.removeEventListener('scroll', handleScroll);
-    //     }
-    // },[]);
-
-    // const  headerStyle = {
-    //     backgroundColor: scrollPosition > 50 ? '#333' : '#222',
-    // };console.log(scrollPosition,"==============", headerStyle, "===========", window.scrollY)
+    const manuref = useRef();
 
    function manubar (){
     manuref.current.style.display ="block"
